@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SIIE | Registro de maestro</title>
+	<link rel="stylesheet" href="Css/Menu_Fixxed_Reg.css">
+	<link rel="stylesheet" href="Css/footer.css">
+	<link rel="shortcut icon" href="Ico/logo.png">
+</head>
+
+<body>
+		<!-- INICIO DE MENU -->
+		<div class="navbar">
+  				<a href="Principal.html">Noticias</a>
+				<div class="dropdown">
+    			<button class="dropbtn">Horario 
+      			<i class="fa fa-caret-down"></i>
+				</button>
+		<div class="dropdown-content">
+				<a href="RegistrarMateria.html">Clases</a>
+			</div>
+			</div>
+		<div class="dropdown">
+    			<button class="dropbtn">Materia 
+      			<i class="fa fa-caret-down"></i>
+				</button>
+		<div class="dropdown-content">
+				<a href="RegistrarMateria.html">Registrar Materia</a>
+			</div>
+			</div>
+  		<div class="dropdown">
+    			<button class="dropbtn">Registro 
+      			<i class="fa fa-caret-down"></i>
+				</button>
+		<div class="dropdown-content">
+      			<a href="RegistroAlumno.html">Alumno</a>
+				<a href="RegistrarMaestro.html">Maestro</a>
+			</div>
+		  </div> 
+		</div>
+			<!-- FIN DE MENU -->
+	<center><h1>REGISTRAR MAESTRO</h1></center>
+		<!-- INICIO DE FORMULARIO -->
+	<div class="form_alumno">
+	<table>
+		<form action="Php/Guardar_maestro.php" method="post">
+		<tr>
+			<td>Matricula:</td>
+			<td><input type="number" min="0" name="matricula" id="matricula"></td>
+		</tr>
+		<tr>
+			<td>Nombre:</td>
+			<td><input type="text" name="nombre" id="nombre"></td>
+		</tr>
+		<tr>
+			<td>Apellido Paterno:</td>
+			<td><input type="text" name="apellidoPa" id="apellidoMa"></td>
+		</tr>
+		<tr>
+		<tr>
+			<td>Apellido Materno:</td>
+			<td><input type="text" name="apellidoP" id="apellidoPa"></td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td><input type="email" name="correo" id="correo"></td>
+		</tr>
+		
+			 <td colspan="2" align="rigth">
+	 		 <input type="submit" value="Guardar">
+	 	</td>
+		</form>
+	</table>
+ </div>
+			<!-- FIN DE FORMULARIO -->
+	<!-- inicio de footer -->
+    <div class="footer1">
+        <img src="img/LogoFooterUdg.png">
+    </div>
+    <!-- fin de footer -->
+				
+</body>
+</html>

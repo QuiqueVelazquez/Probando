@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SIIE | Registro Alumno</title>
+	<link rel="stylesheet" href="Css/footer.css">
+	<link rel="shortcut icon" href="Ico/logo.png">
+	<script src="Js/funciones.js"></script>
+	<link rel="stylesheet" href="Css/Menu_Fixxed_Reg.css"> 
+</head>
+	
+  <body>
+	  <!-- INICIO DE MENU -->
+		<div class="navbar">
+  				<a href="Principal.html">Noticias</a>
+			<div class="dropdown">
+    			<button class="dropbtn">Horario 
+      			<i class="fa fa-caret-down"></i>
+				</button>
+		<div class="dropdown-content">
+				<a href="RegistrarMateria.html">Clases</a>
+			</div>
+			</div>
+		<div class="dropdown">
+    			<button class="dropbtn">Materia 
+      			<i class="fa fa-caret-down"></i>
+				</button>
+		<div class="dropdown-content">
+				<a href="RegistrarMateria.html">Registrar Materia</a>
+			</div>
+			</div>
+  		<div class="dropdown">
+    			<button class="dropbtn">Registro 
+      			<i class="fa fa-caret-down"></i>
+				</button>
+		<div class="dropdown-content">
+      			<a href="RegistroAlumno.html">Alumno</a>
+				<a href="RegistrarMaestro.html">Maestro</a>
+			</div>
+		  </div> 
+		</div>
+			<!-- FIN DE MENU -->
+	  
+	  		<!-- INICIO DE FORMULARIO -->
+   <div class="form_alumno">
+	   <center><h1>REGISTRAR ALUMNO</h1></center>
+	<table>
+		<form action="Php/Guardar_alumno.php" method="POST">
+		<tr>
+			<td>Matricula:</td>
+			<td><input type="number" min="0" max="10" name="matricula" id="matricula"></td>
+		</tr>
+		<tr>
+			<td>Nombre:</td>
+			<td><input type="text" maxlength="20" name="nombre" id="nombre"></td>
+		</tr>
+		<tr>
+			<td>Apellido Paterno:</td>
+			<td><input type="text" maxlength="25" name="apellidoPa" id="apellidoPa"></td>
+		</tr>
+		<tr>
+			<td>Apellido Materno:</td>
+			<td><input type="text" maxlength="25" name="apellidoMa" id="apellidoMa"></td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td><input type="email" maxlength="25" name="correo" id="correo"></td>
+		</tr>
+		
+			 <td colspan="2" align="rigth">
+	 		 <input type="submit" value="Guardar">
+			 <input type="submit" value="Eliminar" onclick="Eliminar_alumno()">
+			 <input type="submit" value="Mostrar alumnos" onclick="Mostrar()">
+		</td>
+		</form>
+	</table>
+ </div>
+	  		<!-- FIN DE FORMULARIO -->
+	  
+			<!-- INICIO DE FOODER -->
+    <div class="footer1">
+        <img src="img/LogoFooterUdg.png">
+    </div>
+    		<!-- FIN DE FOODER -->
+</body>
+</html>

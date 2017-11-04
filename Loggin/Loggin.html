@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="Css/estilos_loggin.css">
+	<link rel="stylesheet" href="Css/estilo_footer.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Ico/logo.png">
+    
+
+	<title>Iniciar Sesion</title>
+
+</head>
+<!--Loggin session-->
+<body>
+    <div class="imagen_udg">
+        <img src="img/udg.png" width="105" height="145">
+    </div>
+    <div id="login-form">
+        <h1>Iniciar Sesion</h1>
+        <fieldset>
+
+            <form action="javascript:void(0);" method="get">
+
+
+                <input type="email" required value="Email" onBlur="if(this.value=='')this.value='Email'" onFocus="if(this.value=='Email')this.value='' ">
+
+                <input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "> 
+
+                <input type="submit" value="Iniciar Sesion">
+
+                <footer class="clearfix">
+
+                    <p><span class="info">?</span><a href="#">Recordar contraseña</a></p>
+                    <p><span class="info">?</span><a href="#">Registrarse</a></p>
+
+                </footer>
+
+            </form>
+
+        </fieldset> 
+
+    </div> 
+    <!-- end login-form -->
+    <!-- inicio de footer -->
+    <div class="Imagenfooter">
+        <img src="img/LogoFooterUdg.png">
+    </div>
+    <!-- fin de footer -->
+
+</body>
+</html>
